@@ -1,5 +1,5 @@
-public class linkedlist {
-        private Node<T> head;
+public class linkedlist <T> {
+    private Node<T> head;
     private Node<T> current;
 
     public linkedlist() {
@@ -7,11 +7,7 @@ public class linkedlist {
     }
 
     public boolean empty() {
-        if (head == null) {
-            return true;
-        } else {
-            return false;
-        }
+    	return head == null;
     }
 
     public void findFirst() {
@@ -63,5 +59,4 @@ public class linkedlist {
             current.next = tmp;
         }
     }
-    
 }
